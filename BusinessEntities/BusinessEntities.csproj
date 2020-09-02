@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C9641E0F-4636-47E5-8D9F-B3D578F6E90D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BusinessEntities</RootNamespace>
+    <AssemblyName>BusinessEntities</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SqlSugar, Version=5.0.0.15, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\sqlSugar.5.0.0.15\lib\SqlSugar.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Applications.cs" />
+    <Compile Include="BarCode.cs" />
+    <Compile Include="Beading_Contractor.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="Colorlist.cs" />
+    <Compile Include="company1Po.cs" />
+    <Compile Include="CutForMaterialWashLable.cs" />
+    <Compile Include="CutpoRelations.cs" />
+    <Compile Include="Dashboard_Program.cs" />
+    <Compile Include="dispath_SampleFab.cs" />
+    <Compile Include="FabInventory.cs" />
+    <Compile Include="FabricCheckQC.cs" />
+    <Compile Include="FabricCheckQC_Appearance.cs" />
+    <Compile Include="Fabric_code.cs" />
+    <Compile Include="Fabric_Color_Mapping.cs" />
+    <Compile Include="FabVendor_CN.cs" />
+    <Compile Include="Fab_Refund.cs" />
+    <Compile Include="Fab_Vendor.cs" />
+    <Compile Include="FactoryQA.cs" />
+    <Compile Include="Factory_BeadingStyle.cs" />
+    <Compile Include="Factory_CADPattern.cs" />
+    <Compile Include="Factory_Code.cs" />
+    <Compile Include="Factory_ColorCard.cs" />
+    <Compile Include="Factory_CutFeedback.cs" />
+    <Compile Include="Factory_FabricConfirm.cs" />
+    <Compile Include="Factory_FabTrimConfirm.cs" />
+    <Compile Include="Factory_Label_Printer.cs" />
+    <Compile Include="Factory_price.cs" />
+    <Compile Include="Factory_Program.cs" />
+    <Compile Include="Factory_QALog.cs" />
+    <Compile Include="Factory_ReturnFab.cs" />
+    <Compile Include="Factory_Role.cs" />
+    <Compile Include="Factory_Sample.cs" />
+    <Compile Include="Factory_User.cs" />
+    <Compile Include="Factory_Userinrole.cs" />
+    <Compile Include="GetLineNoForPo.cs" />
+    <Compile Include="Inventoryview.cs" />
+    <Compile Include="inv_code.cs" />
+    <Compile Include="inv_inbound_head.cs" />
+    <Compile Include="inv_inbound_item.cs" />
+    <Compile Include="inv_inventory_adjust_logs.cs" />
+    <Compile Include="inv_inventory_changein_logs.cs" />
+    <Compile Include="inv_inventory_changeshelf.cs" />
+    <Compile Include="inv_inventory_change_logs.cs" />
+    <Compile Include="inv_inventory_collect.cs" />
+    <Compile Include="inv_inventory_records.cs" />
+    <Compile Include="inv_inventory_toas400_tasks.cs" />
+    <Compile Include="inv_inventory_transfer.cs" />
+    <Compile Include="inv_outbound_head.cs" />
+    <Compile Include="inv_outbound_item.cs" />
+    <Compile Include="inv_outbound_item_detail.cs" />
+    <Compile Include="inv_shelf.cs" />
+    <Compile Include="lack_sampleFab.cs" />
+    <Compile Include="LA_QCInfo.cs" />
+    <Compile Include="Material_Component.cs" />
+    <Compile Include="Memberships.cs" />
+    <Compile Include="Poview.cs" />
+    <Compile Include="ProductionForLAQC.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sample_costsheet.cs" />
+    <Compile Include="Sample_costsheetMaster.cs" />
+    <Compile Include="Sample_costsheetRecord.cs" />
+    <Compile Include="SizeScalecode.cs" />
+    <Compile Include="ss_fabric.cs" />
+    <Compile Include="ss_fabric_appearance.cs" />
+    <Compile Include="ss_fabric_class.cs" />
+    <Compile Include="ss_fabric_color.cs" />
+    <Compile Include="ss_fabric_composition.cs" />
+    <Compile Include="ss_fabric_development.cs" />
+    <Compile Include="ss_fabric_local.cs" />
+    <Compile Include="ss_fabric_operation_log.cs" />
+    <Compile Include="ss_fabric_pricesection.cs" />
+    <Compile Include="ss_fabric_source.cs" />
+    <Compile Include="ss_season.cs" />
+    <Compile Include="ss_season_fabric.cs" />
+    <Compile Include="ss_tax_rate.cs" />
+    <Compile Include="Styles.cs" />
+    <Compile Include="sysdiagrams.cs" />
+    <Compile Include="tb_BeadingForCut.cs" />
+    <Compile Include="tb_bulletin.cs" />
+    <Compile Include="tb_chargeback.cs" />
+    <Compile Include="tb_ChineseOrder.cs" />
+    <Compile Include="tb_chineseOrderTest.cs" />
+    <Compile Include="tb_contractor.cs" />
+    <Compile Include="tb_contractor_feedback.cs" />
+    <Compile Include="tb_costsheet_confirm.cs" />
+    <Compile Include="tb_cutBeading.cs" />
+    <Compile Include="tb_CutcostSheet.cs" />
+    <Compile Include="tb_CutDetail.cs" />
+    <Compile Include="tb_cutFabProgress.cs" />
+    <Compile Include="tb_cutForPo.cs" />
+    <Compile Include="tb_cutForPoLog.cs" />
+    <Compile Include="tb_CutPlandate.cs" />
+    <Compile Include="tb_CutTrackingLog.cs" />
+    <Compile Include="tb_CutTrim.cs" />
+    <Compile Include="tb_DBDFabric.cs" />
+    <Compile Include="tb_DBDFabric2.cs" />
+    <Compile Include="tb_dispatchforcut.cs" />
+    <Compile Include="tb_DispatchInventory.cs" />
+    <Compile Include="tb_dispatch_factory.cs" />
+    <Compile Include="tb_dispatch_factorydetail.cs" />
+    <Compile Include="tb_dispatch_garment.cs" />
+    <Compile Include="tb_dispatch_garmentdetail.cs" />
+    <Compile Include="tb_FabCheckCode.cs" />
+    <Compile Include="tb_FabCheckCode_Record.cs" />
+    <Compile Include="tb_FabReceipt.cs" />
+    <Compile Include="tb_FabReceipt_Attribute.cs" />
+    <Compile Include="tb_FabReceipt_bak.cs" />
+    <Compile Include="tb_FabReceipt_Detail.cs" />
+    <Compile Include="tb_FabricDailyCollect.cs" />
+    <Compile Include="tb_FabricOutToFactory.cs" />
+    <Compile Include="tb_FabRicQuery.cs" />
+    <Compile Include="tb_fabric_return.cs" />
+    <Compile Include="tb_fabric_shelves.cs" />
+    <Compile Include="tb_FGLendlocation.cs" />
+    <Compile Include="tb_FGlocation.cs" />
+    <Compile Include="tb_FGlocationDetail.cs" />
+    <Compile Include="tb_locationdetail.cs" />
+    <Compile Include="tb_MaterialShading.cs" />
+    <Compile Include="tb_MaterialTransfer.cs" />
+    <Compile Include="tb_ModuleManage.cs" />
+    <Compile Include="tb_Moduleoperatedt.cs" />
+    <Compile Include="tb_order.cs" />
+    <Compile Include="tb_orderhead.cs" />
+    <Compile Include="tb_PatternList.cs" />
+    <Compile Include="tb_paymenttype.cs" />
+    <Compile Include="tb_PlanNewstyle.cs" />
+    <Compile Include="tb_PoContract.cs" />
+    <Compile Include="tb_PoContract_Detail.cs" />
+    <Compile Include="tb_PoInquery.cs" />
+    <Compile Include="tb_PurchaseOrder.cs" />
+    <Compile Include="tb_PurchaseOrder_Test.cs" />
+    <Compile Include="tb_PurchaseProgress.cs" />
+    <Compile Include="tb_QCInfo.cs" />
+    <Compile Include="tb_QCSummaryScore.cs" />
+    <Compile Include="tb_ReceiptFG.cs" />
+    <Compile Include="tb_ReceiveForFactory.cs" />
+    <Compile Include="tb_returnFG.cs" />
+    <Compile Include="tb_SelfCompany.cs" />
+    <Compile Include="tb_SelfDetail.cs" />
+    <Compile Include="tb_shippingFG.cs" />
+    <Compile Include="tb_staticstyles.cs" />
+    <Compile Include="tb_SumLocationInfo.cs" />
+    <Compile Include="tb_TechCheckInfo.cs" />
+    <Compile Include="tb_TempBestSeller.cs" />
+    <Compile Include="tb_TransCutFab.cs" />
+    <Compile Include="tb_TransCutFab_barcode.cs" />
+    <Compile Include="tb_TransFabToFactory.cs" />
+    <Compile Include="tb_TrimQuery.cs" />
+    <Compile Include="tb_UPCCode.cs" />
+    <Compile Include="tb_UPCCode_Test.cs" />
+    <Compile Include="tb_Vendor.cs" />
+    <Compile Include="tb_vendorforbarcode.cs" />
+    <Compile Include="TechnicianProgress.cs" />
+    <Compile Include="Tech_Sample.cs" />
+    <Compile Include="TestTimeDiffer.cs" />
+    <Compile Include="testtracking.cs" />
+    <Compile Include="Tracking_TechSample.cs" />
+    <Compile Include="Transfercutqtyview.cs" />
+    <Compile Include="ViewFabVendorInfo.cs" />
+    <Compile Include="ViewTRMVendorInfo.cs" />
+    <Compile Include="WashLable_Detail.cs" />
+    <Compile Include="WashSummary.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
